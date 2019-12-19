@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':annotation')
+    annotationProcessor project(':compiler')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
